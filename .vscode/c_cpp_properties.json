@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW64",
+            "intelliSenseMode": "${default}",
+            "compilerPath": "D:/application/mingw64/bin/gcc.exe",//这里将"C:/MinGW64/bin/"替换为你在环境变量里写的位置
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
