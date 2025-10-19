@@ -1,9 +1,12 @@
 #include <stdio.h>
-int main()
+void main()
 {
     int n,p;
-    scanf("%d",&n);
-    p=10*n;
-    printf("%d\x20%d",n,p);
-    return 0;
+    int i;
+    for(i=0;i<10;i++);
+    {
+        scanf("%d",&n);
+        p=10*n;
+        printf("%d %d",n,p);
+    }
 }
