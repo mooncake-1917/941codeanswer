@@ -10,6 +10,14 @@ int main() {
     int op_count = 0;   // 运算符数量
     int i = 0;
 
+    while(1)
+    {
+        /* code */
+        num_count = 0;  // 操作数数量
+        op_count = 0;   // 运算符数量
+        i = 0;
+    
+
     // 读取输入字符串（直到等号结束）
     fgets(s, sizeof(s), stdin);
     int len = strlen(s);
@@ -47,13 +55,13 @@ int main() {
     // 校验操作数和运算符数量是否匹配（操作数应比运算符多1）
     if (num_count != op_count + 1) {
         printf("ERROR\n");
-        return 0;
+        //return 0;
     }
 
     // 处理只有一个操作数的情况（如"123="）
     if (op_count == 0) {
         printf("%d\n", nums[0]);
-        return 0;
+        //return 0;
     }
 
     // 按从左到右顺序计算
@@ -73,18 +81,19 @@ int main() {
                 // 处理除数为0的情况
                 if (nums[j + 1] == 0) {
                     printf("ERROR\n");
-                    return 0;
+                    //return 0;
                 }
                 result /= nums[j + 1];  // 整数除法
                 break;
             default:
                 // 理论上不会走到这里（前面已校验）
                 printf("ERROR\n");
-                return 0;
+                //return 0;
         }
     }
 
     // 输出计算结果
     printf("%d\n", result);
+    }
     return 0;
 }
