@@ -12,7 +12,19 @@ int main() {
 
     while(1)
     {
-        /* code */
+        if (strlen(s) == 0) {
+            continue;
+        }
+        else
+        {
+            for(int k =0;k<strlen(s);k++)
+            {
+                s[k]='\0';
+            }
+         
+        }
+
+        int result = 0;
         num_count = 0;  // 操作数数量
         op_count = 0;   // 运算符数量
         i = 0;
@@ -65,7 +77,7 @@ int main() {
     }
 
     // 按从左到右顺序计算
-    int result = nums[0];
+    result = nums[0];
     for (int j = 0; j < op_count; j++) {
         switch (ops[j]) {
             case '+':
