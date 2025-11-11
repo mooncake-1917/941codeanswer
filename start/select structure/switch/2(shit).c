@@ -8,9 +8,13 @@ int main()
     int i = 0;
     double x[100], y[100], z[100];
     for (i ; i < 100; i++) {
-        scanf("%lf %lf %lf", &x[i], &y[i], &z[i]);
-
+        while(scanf("%lf %lf %lf", &x[i], &y[i], &z[i]) != EOF);
+        
+        if (x[i] == 0 && y[i] == 0 && z[i] == 0) {
+            break;
+        }
     }
+
 
 
     void result(double a, double b, double c);
@@ -88,3 +92,4 @@ void result(double a, double b, double c) {
         }
            
 } 
+//shit

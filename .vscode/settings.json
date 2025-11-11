@@ -19,5 +19,10 @@
         "plaintext": true,
         "markdown": true,
         "scminput": true
-    }
+    },
+    "trae.tab.enableRename": true,
+    "trae.tab.enableAutoImport": true,
+    "trae.privacy.mode": true,
+    "trae.tab.cue": true,
+    "trae.tab.enablePartialAccept": true
 }
